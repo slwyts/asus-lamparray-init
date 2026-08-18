@@ -1,0 +1,13 @@
+[Unit]
+Description=Initialize ASUS I2C-HID LampArray keyboard backlight
+Documentation=https://github.com/OpenGamingCollective/asusctl/issues/148
+After=systemd-udev-settle.service
+Wants=systemd-udev-settle.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/asus-lamparray-init --config /etc/asus-lamparray-init.conf --wait 15
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
