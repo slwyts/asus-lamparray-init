@@ -1,8 +1,8 @@
 # asus-lamparray-init
 
-为采用 I2C-HID Microsoft LampArray 控制器的 ASUS 笔记本，在 Linux 冷启动时初始化键盘 RGB 背光。
+（天选6P）为采用 I2C-HID Microsoft LampArray 控制器的 ASUS 笔记本，在 Linux 冷启动时初始化键盘 RGB 背光,以解决键盘背光不亮的问题。
 
-本项目最初针对以下硬件验证：
+在以下硬件验证：
 
 - ASUS TX Gaming / 天选 6 Pro（FA608FM）
 - HID ID：`0018:0B05:19B6`
